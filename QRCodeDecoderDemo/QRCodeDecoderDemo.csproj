@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net6.0-windows</TargetFramework>
+		<Nullable>disable</Nullable>
+		<UseWindowsForms>true</UseWindowsForms>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<EnablePreviewFeatures>true</EnablePreviewFeatures>
+		<!--Enable WPF-->
+		<UseWPF>true</UseWPF>
+		<UseWindowsForms>true</UseWindowsForms>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\QRCodeDecoderLibrary.Windows\QRCodeDecoderLibrary.Windows.csproj" />
+		<ProjectReference Include="..\QRCodeDecoderLibrary\QRCodeDecoderLibrary.csproj" />
+	</ItemGroup>
+
+</Project>
