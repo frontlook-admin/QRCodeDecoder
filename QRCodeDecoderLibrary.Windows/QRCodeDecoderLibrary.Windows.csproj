@@ -3,12 +3,14 @@
 	<PropertyGroup>
 		<TargetFrameworks>net6.0-Windows</TargetFrameworks>
 		<Nullable>disable</Nullable>
+		<!--Enable WPF-->
+		<UseWPF>true</UseWPF>
 		<UseWindowsForms>true</UseWindowsForms>
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\QRCodeDecoderLibrary\QRCodeDecoderLibrary.csproj" />
+		<ProjectReference Include="..\QRCodeDecoderLibrary\QRCodeDecoderLibrary.csproj" />
 	</ItemGroup>
 
 </Project>

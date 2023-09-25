@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRCodeEncoderDemo", "QRCode
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRCodeEncoderLibrary", "QRCodeEncoderLibrary\QRCodeEncoderLibrary.csproj", "{003A69B1-77C4-4008-BC2F-C413514DA388}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QRCodeEncoderLibrary.Windows", "QRCodeEncoderLibrary.Windows\QRCodeEncoderLibrary.Windows.csproj", "{CD6031AD-9B47-468D-95EB-13B431D96CE6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{003A69B1-77C4-4008-BC2F-C413514DA388}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{003A69B1-77C4-4008-BC2F-C413514DA388}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{003A69B1-77C4-4008-BC2F-C413514DA388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD6031AD-9B47-468D-95EB-13B431D96CE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD6031AD-9B47-468D-95EB-13B431D96CE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD6031AD-9B47-468D-95EB-13B431D96CE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD6031AD-9B47-468D-95EB-13B431D96CE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
