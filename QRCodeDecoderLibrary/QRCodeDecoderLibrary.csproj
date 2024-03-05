@@ -10,4 +10,19 @@
 	  <PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 	</ItemGroup>
 
+	<PropertyGroup Label="Version" Condition="'$(DesignTimeBuild)' != 'true' OR '$(BuildingProject)' == 'true'">
+		<BuildId>$([System.DateTime]::Now.ToString(yy.MMdd.HHmm))</BuildId>
+		<BuildId Condition="'$(Configuration)'=='Release'">$([System.DateTime]::Now.ToString(yy.MMdd.HHmm))</BuildId>
+		<BuildId Condition="'$(Configuration)'=='Debug'">$([System.DateTime]::Now.ToString(yy.MMdd))</BuildId>
+		<BuildCode Condition="'$(Configuration)'=='Release'">$([System.DateTime]::Now.ToString(.hhmmss))</BuildCode>
+		<BuildCode Condition="'$(Configuration)'=='Debug'"></BuildCode>
+		<VersionPrefix Condition="'$(TargetFramework)' == 'net6.0' OR '$(TargetFramework)' == 'net6.0-Windows'">6.$(BuildId)</VersionPrefix>
+		<VersionPrefix Condition="'$(TargetFramework)' == 'net8.0' OR '$(TargetFramework)' == 'net8.0-Windows'">8.$(BuildId)</VersionPrefix>
+		<BuildVersion>$(BuildId)$(BuildCode)</BuildVersion>
+		<AssemblyVersion>$(Version)</AssemblyVersion>
+		<FileVersion>$(Version)</FileVersion>
+		<PackageId>$(AssemblyName)</PackageId>
+		<Product>$(AssemblyName)</Product>
+		<Version>$(VersionPrefix)</Version>
+	</PropertyGroup>
 </Project>
